@@ -33,5 +33,33 @@
   "filters": {
     "defaultTab": "core",
     "minScore": 1000
-  }
+  },
+  "strategies": [
+    ["contract-call", {
+      "address": "0x990934b1268398738d955D1e329258997148528b",
+      "decimals": 18,
+      "symbol": "RLY",
+      "methodABI": {
+         "constant":true,
+         "inputs":[
+            {
+               "internalType":"address",
+               "name":"account",
+               "type":"address"
+            }
+         ],
+         "name":"snapshotScore",
+         "outputs":[
+            {
+               "internalType":"uint256",
+               "name":"",
+               "type":"uint256"
+            }
+         ],
+         "payable":false,
+         "stateMutability":"view",
+         "type":"function"
+      }
+    }]
+  ]
 }
