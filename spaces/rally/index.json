@@ -25,31 +25,34 @@
     "minScore": 1000
   },
   "strategies": [
-    ["contract-call", {
-      "address": "0x3f5911fd5853EA3B30E259c5044Ac2BBE1A86a6C",
-      "decimals": 9,
-      "symbol": "RLY",
-      "methodABI": {
-         "constant":true,
-         "inputs":[
+    {
+      "name": "contract-call",
+      "params": {
+        "address": "0x3f5911fd5853EA3B30E259c5044Ac2BBE1A86a6C",
+        "decimals": 9,
+        "symbol": "RLY",
+        "methodABI": {
+          "constant": true,
+          "inputs": [
             {
-               "internalType":"address",
-               "name":"account",
-               "type":"address"
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
             }
-         ],
-         "name":"snapshotScore",
-         "outputs":[
+          ],
+          "name": "snapshotScore",
+          "outputs": [
             {
-               "internalType":"uint256",
-               "name":"",
-               "type":"uint256"
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
             }
-         ],
-         "payable":false,
-         "stateMutability":"view",
-         "type":"function"
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function"
+        }
       }
-    }]
+    }
   ]
 }
